@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Balamurugan Portfolio Website</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/b3348ae33f.js"
+    crossorigin="anonynou"
+    ></script>
+	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+	<!------Header Section------>
+	<header>
+		<a href="#" class="logo"><span>B</span>M</a>
+		<ul class="navlist">
+			<li><a href="#home" class="active">H<span>o</span>me</a></li>
+			<li><a href="#about">About <span>Me</span></a></li>
+			<li><a href="#services"><span>My</span>ESE</a></li>
+			<li><a href="#portfolio">P<span>o</span>rtfolio</a></li>
+			<li><a href="#contact">C<span>o</span>ntact</a></li>
+		</ul>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+	<!---------Home Section--------------->
+	<section class="home" id="home">
+		<div class="home-text">
+			<div class="slide">
+				<span class="one">Hello</span>
+				<span class="two">I'm</span>
+			</div>
+			<h1>Balamurugan.V</h1>
+			<h3>Web <span>Developer.</span></h3>
+			<p><strong>Web developer: Crafting digital experiences through code and creativity.</strong></p>
+			<div class="button">
+				<a href="#about" class="btn">About Me</a>
+			</div>
+		</div>
+	</section>
+
+	<!---------about Section --------------->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img id="pic" src="img/about1 (2).jpg"> 
+		</div>
+
+		<div class="about-text">
+			<h2>About <span>Me</span></h2>
+			<h4>Web Developer!</h4>
+			<p> <strong>I am eager to contribute my coding skills and passion for creating efficient
+				and visually appealing websites. Seeking a challenging role where I can
+				further develop my expertise in front-end and back-end technologies while
+				collaborating with a dynamic team to deliver high-quality web solutions.
+			    </strong>
+			</p>
+		</div>
+	</section>
+
+	<!-----------Services Section-------------->
+	<section class="services" id="services">
+	<div class="main-text">
+		<h2><span>My</span>ESE</h2>
+	</div>
+	<div class="services-content">
+		<div class="box">
+			<div class="s-icons">
+				<i class="fa-solid fa-suitcase" style="color: #74C0FC;"></i>
+			</div>
+			<h3>EXPERINECE</h3>
+			<p class="excerpt">SightSpectrum Technology solutions Pvt Ltd,Chennai.<br>
+				<span>Software Trainee</span><br>
+				September 2023 - December 2023<br>
+				<p class="full-text">
+				• As a Web Developer Software Trainee, engaged as a developer
+				and implementation of web-based solutions under the guidance of
+				senior developers and mentors.<br>
+				• During this period, gained hands-on experience with modern web
+				technologies, frameworks, and methodologies, including HTML,
+				CSS, JavaScript, and various front-end and back-end frameworks
+				such as React.js, Node.js, and Express.js.
+			    </p>
+		    </p>
+			<button id="readMoreBtn" class="btn">Read More</button>
+		</div>
+
+		<div class="box">
+			<div class="s-icons">
+				<i class="fa-solid fa-lightbulb" style="color: #74C0FC;"></i>
+			</div>
+			<h3>SKILLS</h3>
+			<p class="excerpt1"><span>Programming Languages:</span><br>
+				• HTML
+				• CSS
+				• JavaScript
+				• React.
+				<span>Backend Development:</span><br>
+				• Node.js
+				• MySQL
+				• MongoDB
+				<p class="full-text1">
+				<span>Version Control Systems:</span><br>
+				• Git and GitHub<br>
+				<span>Soft Skills</span><br>
+				• Communication
+				• Teamwork<br>
+				• Problem-solving
+				• Time management</p></p>
+                <button id="readMoreBtn1" class="btn">Read More</button>
+		</div>
+
+		<div class="box">
+			<div class="s-icons">
+				<i class="fa-solid fa-user-graduate" style="color: #74C0FC;"></i>
+			</div>
+			<h3>EDUCATION</h3>
+			<p class="excerpt2"><span>BACHELOR OF ENGINEERING</span><br>
+				|MECHANICAL ENGINEERING<br>
+				St. Joseph College of Engineering.<br>
+				Chennai. May 2023<br>
+				<span>GPA: 8.34</span><br>
+				<p class="full-text2">
+				<span>DIPLOMA</span><br>
+				|MECHANICAL ENGINEERING<br>
+				T.J.S Polytechnic College , Tiruvallur<br>
+				May 2020<br>
+				<span>GPA: 8.61</span><br>
+				</p></p>
+				<button id="readMoreBtn2" class="btn">Read More</button>
+		</div>
+		<script>
+			// JavaScript function to toggle the visibility of the full text content
+			const readMoreBtn = document.getElementById('readMoreBtn');
+			const excerpt = document.querySelector('.excerpt');
+			const fullText = document.querySelector('.full-text');
+
+			let isExpanded = false;
+
+			readMoreBtn.addEventListener('click', () => {
+			if (isExpanded) {
+				excerpt.style.display = 'block';
+				fullText.style.display = 'none';
+				readMoreBtn.textContent = 'Read More';
+			} else {
+				excerpt.style.display = 'none';
+				fullText.style.display = 'block';
+				readMoreBtn.textContent = 'Read Less';
+			}
+			
+			isExpanded = !isExpanded;
+			});
+
+            const readMoreBtn1 = document.getElementById('readMoreBtn1');
+			const excerpt1 = document.querySelector('.excerpt1');
+			const fullText1 = document.querySelector('.full-text1');
+
+			let isExpanded1 = false;
+
+			readMoreBtn1.addEventListener('click', () => {
+			if (isExpanded1) {
+				excerpt1.style.display = 'block';
+				fullText1.style.display = 'none';
+				readMoreBtn1.textContent = 'Read More';
+			} else {
+				excerpt1.style.display = 'none';
+				fullText1.style.display = 'block';
+				readMoreBtn1.textContent = 'Read Less';
+			}
+			
+			isExpanded1 = !isExpanded1;
+			});
+
+			const readMoreBtn2 = document.getElementById('readMoreBtn2');
+			const excerpt2 = document.querySelector('.excerpt2');
+			const fullText2 = document.querySelector('.full-text2');
+
+			let isExpanded2 = false;
+
+			readMoreBtn2.addEventListener('click', () => {
+			if (isExpanded2) {
+				excerpt2.style.display = 'block';
+				fullText2.style.display = 'none';
+				readMoreBtn2.textContent = 'Read More';
+			} else {
+				excerpt2.style.display = 'none';
+				fullText2.style.display = 'block';
+				readMoreBtn2.textContent = 'Read Less';
+			}
+			
+			isExpanded2 = !isExpanded2;
+			});
+ 
+		</script>
+	</div>
+
+</section>
+
+<!-----------Portfolio Section--------------->
+<section class="portfolio" id="portfolio">
+	<div class="main-text">
+		<h2><span>latest</span>Project</h2>
+	</div>
+	<div class="portfolio-content">
+		<div class="row">
+			<img src="img/project1.jpg" >
+			<div class="layer">
+				<h5>Car Rental Web Application<br>
+				On Developement</h5>
+				<p>Developeing a comprehensive car rental web application using HTML, CSS,
+					JavaScript, and Node.js, aimed at providing a seamless and efficient rental
+					experience for users.</p>
+				<a href="#"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/project3.jpg" >
+			<div class="layer">
+				<h5>BM Shop Dashboard</h5>
+				<p>This is the design of the dashboard use antd design for the pre built components.</p>
+				<a href="https://bm-dashboard-bala-made.vercel.app/"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/back6.jpg" >
+			<div class="layer">
+				<h5>E-commerce Website<br>
+				On Development</h5>
+				<p>Developeing a fully functional E-commerce website from scratch using HTML,
+					CSS, and JavaScript.</p>
+				<a href="#"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/back3.jpg" >
+			<div class="layer">
+				<h5>TODO LIST</h5>
+				<p>Adding Tasks: Implement a form or input field where users can enter a new task and add it to the todo list.</p>
+				<a href="https://todo-list-bala-made.vercel.app/"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/back5.jpg" >
+			<div class="layer">
+				<h5>TIC TAC TOE</h5>
+				<p>Board Representation: Create a 2D array (like a matrix) to represent the Tic Tac Toe board. Each element in the array will indicate an empty space ("-"), "X", or "O".</p>
+				<a href="https://baladhanush.github.io/game/"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/project6.jpg" >
+			<div class="layer">
+				<h5>Calculator</h5>
+				<p>Basic Arithmetic Operations: Perform addition, subtraction, multiplication, and division.</p>
+				<a href="https://baladhanush.github.io/calculator/"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!------------------Contact section------------>
+<section class="contact" id="contact">
+	<div class="contact-text">
+		<h2>Contact <span>Me!</span></h2>
+		<h4>If you have any project in your mind.</h4>
+		<p>I'm a website Designer - creating bold & brave interface design for compaines all across the world.</p>
+		
+
+		<div class="contact-icons">
+			<a href="https://www.facebook.com/profile.php?id=100014358736356&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+			<a href="#"><i class='bx bxl-twitter' ></i></a>
+			<a href="https://www.instagram.com/bala_ennum_naan_?igsh=Njl3MTBsMXVqdWNi" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+			<a href="https://youtube.com/@bala_ennum_naan1907?si=CVeHAHfsDXxjFQ6H" target="_blank"><i class='bx bxl-youtube' ></i></a>
+		</div>
+
+	</div>
+	<div class="contact-form">
+		<form id="contact-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Your Name " required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Your Email " required>
+			<label for="number">Number:</label>
+			<input type="number" id="number" name="number" placeholder="your Mobile Number">
+			<label for="message">Message:</label><br>
+			<textarea id="message" name="message" cols="35" rows="19" placeholder="How Can I Help You " required></textarea>
+			<button class="btn" type="button" onclick="sendEmail()">Submit</button>
+		</form>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <script>
+            emailjs.init("BScSYuvOKBaWnMYgi"); 
+
+            function sendEmail() {
+                const contactForm = document.getElementById('contact-form');
+                const formData = new FormData(contactForm);
+
+                const templateParams = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                message: formData.get('message')
+                };
+
+                emailjs.send('service_apsdogn', 'template_x7l5cbp', templateParams)
+                .then(function(response) {
+                    alert('Message sent successfully!');
+                    contactForm.reset();
+                }, function(error) {
+                    console.error('Failed to send message:', error);
+                    alert('An error occurred while sending the message.');
+                });
+            }
+
+          </script>
+	</div>
+</section>
+
+<!---------End Section---------->
+<section class="end" style="text-align: center;">
+	<div class="last-text">
+		<p><span>Design By Balamurugan.V</span> <br> © 2024 Balamurugan.V All Rights Reserved.</p>
+	</div>
+	<div class="top">
+		<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+	</div>
+</section>
+
+</body>
+
+</html>
