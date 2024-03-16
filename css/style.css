@@ -507,40 +507,42 @@ form textarea {
         grid-template-columns: 1fr;
     }
 }
-@media (max-width: 480px){
-    #menu-icon{
+@media (max-width: 480px) {
+    #menu-icon {
         display: block;
     }
-    .navlist{
+    .navlist {
         position: absolute;
-        top: -1000px;
+        top: 100%; /* Adjusted from -1000px */
         right: 0;
         left: 0;
+        width: 100%; /* Added */
         display: flex;
         flex-direction: column;
         background: var(--bg-color);
         text-align: left;
         transition: all .45s ease;
-
+        box-sizing: border-box; /* Added */
+        padding: 10px; /* Added */
     }
-    .navlist a{
+    .navlist a {
         display: block;
         margin: 17px;
         font-size: 20px;
         transition: all .45s ease;
         color: var(--text-color);
-
     }
-    .navlist a:hover{
+    .navlist a:hover {
         color: var(--main-color);
     }
-    navlist a.active{
+    .navlist a.active {
         color: var(--text-color);
     }
-    .navlist.open{
-        top: 100%;
+    .navlist.open {
+        top: 100%; /* Added */
     }
 }
+
 
 .full-text {
     display: none; /* Initially hide full text */
