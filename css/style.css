@@ -511,20 +511,22 @@ form textarea {
     #menu-icon {
         display: block;
     }
+
     .navlist {
-        position: absolute;
-        top: 100%; /* Adjusted from -1000px */
+        position: fixed; /* Change to fixed for better mobile experience */
+        top: 0;
         right: 0;
+        bottom: 0;
         left: 0;
-        width: 100%; /* Added */
         display: flex;
         flex-direction: column;
         background: var(--bg-color);
         text-align: left;
         transition: all .45s ease;
-        box-sizing: border-box; /* Added */
-        padding: 10px; /* Added */
+        z-index: 1000; /* Ensure the menu appears above other content */
+        padding-top: 50px; /* Adjust as needed */
     }
+
     .navlist a {
         display: block;
         margin: 17px;
@@ -532,16 +534,26 @@ form textarea {
         transition: all .45s ease;
         color: var(--text-color);
     }
+
     .navlist a:hover {
         color: var(--main-color);
     }
+
     .navlist a.active {
         color: var(--text-color);
     }
+
     .navlist.open {
-        top: 100%; /* Added */
+        /* Change top to 0 to fully reveal the menu */
+        top: 0;
+    }
+
+    /* Add this rule to enable touch events for opening and closing the menu */
+    .navlist:not(.open) {
+        pointer-events: none;
     }
 }
+
 
 
 .full-text {
